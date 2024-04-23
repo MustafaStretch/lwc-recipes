@@ -10,5 +10,17 @@
     <targetConfig targets="lightning__RecordAction">
       <actionType>Action</actionType>
     </targetConfig>
+    <targetConfig targets="lightningPage__Default">
+      <property
+      name="recordId" type="String"
+      label="Record Id"
+      description="This will pass the page record id to the lwc variable"
+      default="{!recordId}" />
+      <property
+      name="objectApiName" type="String"
+      label="Object Name"
+      description="This will pass the page object name to the lwc variable"
+      default="{!objectApiName}" />
+    </targetConfig>
   </targetConfigs>
 </LightningComponentBundle>
